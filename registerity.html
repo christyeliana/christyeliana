@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register here</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style type="text/css">
+        .fieldset {
+            border-radius: 15px;
+            border-color: rgb(82, 145, 145);
+            background-color: rgb(200, 223, 241);
+            box-shadow: 3px 3px 5px #444;
+            font-size: 30px;
+            left: 32%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border-style: ridge;
+            display: inline-block;
+            position: absolute;
+
+        }
+        .background {
+            background-image: url(gigi4.jpg);
+            background-size: cover;
+          
+        }
+    </style>
+</head>
+<body class="background">
+    <form action="#" method="post">
+    <fieldset class="fieldset">
+        <legend align="center"><b> MAKE YOUR APPOINTMENT HERE </b></legend>
+        <table>
+            <tr>
+                <td><label for="name">Name</label></td>
+                <td><input type="text" id="name" name="name"></td>
+            </tr>
+            <tr>
+                <td><label for="phone number"> Phone Number </label></td>
+                <td><input type="number" id="phone number" name="phone number"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="date"> Input your check-up date </label>
+                    </td>
+                    <td>
+                    <input type="date" id="date" name="date"> 
+                    </td>
+            </tr>
+        </table>
+        <style type="text/css">
+            #box {
+                border-radius: 15px;
+                border-color: rgb(0, 81, 132);
+            }
+        </style>
+        <style type="text/css">
+            .gradient {
+                background-image: linear-gradient(to right, rgb(167, 215, 234), rgb(223, 212, 227));
+                font-family: sans-serif;
+                font-size: 17px;
+                
+            }
+        </style>
+        <script type="text/javascript">
+            function test() {
+                alert("Terimakasih! Untuk info lebih lanjut mengenai waktu, akan kami hubungi segera.")
+            }
+        </script>
+        <br>
+        <center>
+        <input type="submit" value="Finish" div id="box" class="gradient" onclick="test()">
+        <input type="reset" value="Reset" div id="box" class="gradient">
+        </center>
+    </fieldset>
+    </form>
+</body>
+</html>
