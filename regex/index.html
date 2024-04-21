@@ -3,11 +3,168 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Validasi dengan Regular Expression</title>
+<title>RegX Validation</title>
+<style>
+    body {
+        background-color: rgb(35, 58, 58);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    .judul {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 36px;
+        color: rgb(22, 82, 106);
+    }
+    .kotak {
+        padding: 20px;
+        border-radius: 10px;
+        background-color: rgb(214, 232, 250);
+        max-width: 400px;
+        width: 100%;
+    }
+    .input-container {
+        margin-bottom: 10px;
+    }
+    input[type="text"] {
+        width: 100%;
+        border-radius: 4px;
+        border: 1px solid black;
+        font-size: 15px;
+        padding: 8px;
+    }
+    label {
+        font-size: 20px;
+        color: black;
+    }
+    span {
+        margin-top: 4px;
+        font-size: 12px;
+    }
+</style>
 </head>
 <body>
+    <section class="kotak">
+        <div class="judul">
+            <h1>Form Jadi Jadian</h1>
+        </div>
+        <div class="input-container">
+            <label for="email">Masukkan Email</label>
+            <input id="email" type="text" placeholder="Masukkan Email yang sesuai" />
+            <p><span id="validemail"></span></p>
+        </div>
+        <div class="input-container">
+            <label for="uname">Masukkan Username</label>
+            <input id="uname" type="text" placeholder="Hanya terdiri dari huruf dan angka, tidak diatas 10 karakter" />
+            <p><span id="validuname"></span></p>
+        </div>
+        <div class="input-container">
+            <label for="birth">Masukkan Tanggal Lahir</label>
+            <input id="birth" type="text" placeholder="YYYY-MM-DD" />
+            <p><span id="validbirth"></span></p>
+        </div>
+        <div class="input-container">
+            <label for="phone">Masukkan Nomor Telepon</label>
+            <input id="phone" type="text" placeholder="Berikan spasi setiap 4 digit" />
+            <p><span id="validphone"></span></p>
+        </div>
+        <div class="input-container">
+            <label for="nim">Masukkan NIM</label>
+            <input id="nim" type="text" placeholder="9 angka saja" />
+            <p><span id="validnim"></span></p>
+        </div>
+    </section>
+</body>
+</html>
 
-<h2>Form Validasi dengan Regular Expression</h2>
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RegX Validation</title>
+<style>
+    body {
+        background-color: rgb(35, 58, 58);
+    }
+    .kotak {
+        margin-top: 100px;
+        margin-right: 250px;
+        margin-left: 250px;
+        border-radius: 10px;
+        background-color: rgb(214, 232, 250);
+    }
+    .input[type="text"] {
+        margin-top: 5px;
+        width: 100px;
+        border-radius: 4px;
+        border-color: black;
+        font-size: 15px;
+    }
+    judul {
+        margin-bottom: 4px;
+        font-size: 20px;
+        color: black;
+    }
+    hsl {
+        margin-top: 1px;
+        font-size: 9px;
+    }
+</style>
+</head>
+<body>
+    <section class="kotak">
+        <judul for="email">Masukkan Email</judul>
+        <br>
+        <input id="email" type="text" placeholder="Masukkan Email yang sesuai" />
+        <p>
+            <span id="validemail"></span>
+        </p>
+        <br>
+        <judul for="uname">Masukkan Username</judul>
+        <br>
+        <input id="uname" type="text" placeholder="Username hanya terdiri dari huruf dan angka" />
+        <p>
+            <span id="validuname"></span>
+        </p>
+        <br>
+        <judul for="birth">Masukkan Tanggal lahir</judul>
+        <br>
+        <input id="birth" type="text" placeholder="YYYY-MM-DD" />
+        <p>
+            <span id="validbirth"></span>
+        </p>
+        <br>
+        <judul for="phone">Masukkan Nomor Telepon</judul>
+        <br>
+        <input id="phone" type="text" placeholder="Berikan spasi setiap 4 digit" />
+        <p>
+            <span id="validphone"></span>
+        </p>
+        <br>
+        <judul for="nim">Masukkan NIM</judul>
+        <br>
+        <input id="nim" type="text" placeholder="9 angka saja" />
+        <p>
+            <span id="validnim"></span>
+        </p>
+      
+
+    </section> -->
+
+
+<!-- <h2>Form Validasi dengan Regular Expression</h2>
 
 <form id="myForm" onsubmit="return validateForm()">
   <label for="email">Email:</label><br>
@@ -26,7 +183,7 @@
   <input type="text" id="zipcode" name="zipcode"><br>
 
   <button type="submit">Submit</button>
-</form>
+</form> -->
 
 <script src="script.js"></script>
 
